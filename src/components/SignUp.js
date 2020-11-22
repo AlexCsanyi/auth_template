@@ -33,8 +33,8 @@ export default function SignUp() {
     }
 
     return (
-        <>
-            <Card>
+        <div className="d-flex align-items-center justify-content-center" style={{minHeight: "100vh"}}>
+            <Card className="w-50 p-3">
                 <Card.Body>
                     <h2 className="text-center mb-4">Sign Up</h2>
                     {error && <Alert variant="danger">{error}</Alert>}
@@ -54,10 +54,10 @@ export default function SignUp() {
                         <Button disabled={loading} type="submit" className="w-100">Sign Up</Button>
                     </Form>
                 </Card.Body>
+                <div className="w-100 text-center mt-2">
+                    Already have an account? <Link to="/login">Log In</Link>
+                </div>  
             </Card>
-            <div className="w-100 text-center mt-2">
-                Already have an account? <Link to="/login">Log In</Link>
-            </div>  
-        </>
+        </div>
     )
 }

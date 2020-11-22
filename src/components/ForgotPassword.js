@@ -27,8 +27,8 @@ export default function ForgotPassword() {
     }
 
     return (
-        <>
-            <Card>
+        <div className="d-flex align-items-center justify-content-center w-100" style={{minHeight: "100vh"}}>
+            <Card className="w-50 p-3">
                 <Card.Body>
                     <h2 className="text-center mb-4">Reset Password</h2>
                     {error && <Alert variant="danger">{error}</Alert>}
@@ -44,10 +44,10 @@ export default function ForgotPassword() {
                         <Link to="/login">Log In</Link>
                     </div>  
                 </Card.Body>
+                <div className="w-100 text-center mt-2">
+                    Need an account? <Link to="/signup">Sign Up</Link>
+                </div>  
             </Card>
-            <div className="w-100 text-center mt-2">
-                Need an account? <Link to="/signup">Sign Up</Link>
-            </div>  
-        </>
+        </div>
     )
 }

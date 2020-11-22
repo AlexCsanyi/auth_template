@@ -36,8 +36,8 @@ export default function UpdateProfile() {
     }
 
     return (
-        <>
-            <Card>
+        <div className="d-flex align-items-center justify-content-center w-100" style={{minHeight: "100vh"}}>
+            <Card className="w-50 p-3">
                 <Card.Body>
                     <h2 className="text-center mb-4">Update Profile</h2>
                     {error && <Alert variant="danger">{error}</Alert>}
@@ -68,10 +68,10 @@ export default function UpdateProfile() {
                         <Button disabled={loading} type="submit" className="w-100">Update Profile</Button>
                     </Form>
                 </Card.Body>
-            </Card>
-            <div className="w-100 text-center mt-2">
-                <Link to="/">Cancel</Link>
-            </div>  
-        </>
+                <div className="w-100 text-center mt-2">
+                    <Link to="/">Cancel</Link>
+                </div> 
+            </Card> 
+        </div>
     )
 }
