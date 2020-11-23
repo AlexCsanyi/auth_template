@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
-import {Button, Alert} from 'react-bootstrap';
-import { Link, useHistory } from 'react-router-dom';
+import {Alert} from 'react-bootstrap';
+import {useHistory} from 'react-router-dom';
 import {useAuth} from '../../contexts/AuthContext';
 import styled from 'styled-components';
 
@@ -82,25 +82,6 @@ const Welcome = styled.header`
     font-size: 44px;
     text-align: center;
     padding-bottom: 15px;
-`
-const ButtonOut = styled.button`
-    background: transparent;
-    color: #fff;
-    width: 120px;
-    border: 2px solid#fff;
-    border-radius: 25px;
-    padding: 10px;
-    -webkit-box-shadow: 0px 10px 49px -14px rgba(0, 0, 0, 0.7);
-    -moz-box-shadow: 0px 10px 49px -14px rgba(0, 0, 0, 0.7);
-    box-shadow: 0px 10px 49px -14px rgba(0, 0, 0, 0.7);
-
-    &:hover {
-        border: 2px solid#eecbff;
-    }
-
-    &:focus {
-        outline: none;
-    }
 `
 const LinkContainer =  styled.div`
     margin-top: 15px;
