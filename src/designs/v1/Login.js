@@ -180,6 +180,7 @@ export default function Login() {
                                 </Form.Group>
                                 <ButtonSubmit disabled={loading} type="submit">Log In</ButtonSubmit>
                                 <LoginLinkContainer>
+                                    <Link to="/forgot-password">Forgot Password?</Link>
                                     Need an account? <Link to="/signup">Sign Up</Link>
                                 </LoginLinkContainer>
                             </Form>
