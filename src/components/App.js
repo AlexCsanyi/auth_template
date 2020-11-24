@@ -10,7 +10,7 @@ import UpdateProfile from "./UpdateProfile";
 
 function App() {
   return (
-    <Container>
+    <Container fluid className="p-0">
             <BrowserRouter>
                 <AuthProvider>
                     <Switch>
