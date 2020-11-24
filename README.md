@@ -1,8 +1,8 @@
 # A starter template bootstrapped with [Create React App](https://github.com/facebook/create-react-app) and [Firebase](https://firebase.google.com/).
 
-This template comes with authorization implemented using Firebase.
+This template comes with authentication implemented using Firebase.
 There are different simple form templates you can pick and extend.
-The core template implements the authorization using the email and password method.
+The core template implements the authentication using the email and password method.
 
 ## Get Started
 
