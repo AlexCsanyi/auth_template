@@ -93,7 +93,7 @@ The core template uses basic [Bootstrap](https://getbootstrap.com/) classes and 
 Other designs make use of [Styled-Components](https://styled-components.com/) and [React-Icons](https://react-icons.github.io/react-icons/) therefore if you choose to create your own designs these are available for you to use.
 Don't like these? just run `npm uninstall <package-name>`
 
-[webfontloader](https://www.npmjs.com/package/webfontloader) allows you to choose any Google, Typekit, Fontdeck fonts easily in your project. (It is used and implemented in the the V3 design.) 
+[webfontloader](https://www.npmjs.com/package/webfontloader) allows you to choose any Google, Typekit, Fontdeck font easily in your project. (It is used and implemented in the V3 design.) 
 
 6. ### `npm run build`
 
