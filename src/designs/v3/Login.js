@@ -248,7 +248,7 @@ const SocialMedia = styled.div`
     justify-content: center;
 `
 
-const SocialIcon = styled.a`
+const SocialIcon = styled.span`
     height: 46px;
     width: 46px;
     display: flex;
@@ -534,7 +534,7 @@ export default function Login() {
                         <Link to="/forgot-password">Forgot Password?</Link>
                         <SocialText>Sign in with Google</SocialText>
                         <SocialMedia>
-                            <SocialIcon onClick={handleLoginWithProvider} data-provider="google" href="/">
+                            <SocialIcon onClick={handleLoginWithProvider} data-provider="google">
                                 <FaGoogle></FaGoogle>
                             </SocialIcon>
                         </SocialMedia>
@@ -556,7 +556,7 @@ export default function Login() {
                         <Button type="submit" value="Sign up" disabled={loading} />
                         <SocialText>Get started using your Google account</SocialText>
                         <SocialMedia>
-                            <SocialIcon onClick={handleLoginWithProvider} data-provider="google" href="/">
+                            <SocialIcon onClick={handleLoginWithProvider} data-provider="google">
                                 <FaGoogle></FaGoogle>
                             </SocialIcon>
                         </SocialMedia>

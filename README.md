@@ -112,7 +112,7 @@ Go to the `AuthContext.js` file and the `loginWithProvider` function allows you 
 The Google auth method is implemented in the design V3
 
 ```JS
-<SocialIcon onClick={handleLoginWithProvider} data-provider="google" href="/">
+<SocialIcon onClick={handleLoginWithProvider} data-provider="google">
     <FaGoogle></FaGoogle>
 </SocialIcon>
 ```
@@ -121,7 +121,7 @@ If you want to use Facebook as an example just copy the above and change the `da
 
 example:
 ```JS
-<SocialIcon onClick={handleLoginWithProvider} data-provider="facebook" href="/">
+<SocialIcon onClick={handleLoginWithProvider} data-provider="facebook">
     <FaFacebook></FaFacebook>
 </SocialIcon>
 ```
